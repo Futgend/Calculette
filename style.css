@@ -1,0 +1,45 @@
+* {
+    background-color: rgb(67, 60, 185);
+    
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(4, 1fr);
+    grid-gap: 1px;
+    width: 300px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white;
+}
+
+.terminal {
+    grid-column: span 4;
+    background-color: rgb(17, 16, 37);
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    line-height: 3em;
+    padding-right: 5px;
+}
+
+.AC, .num, .egal {
+    background-color: rgb(202, 201, 238);
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    line-height: 3em;
+}
+
+.AC, .egal {
+    grid-column: span 2;
+}
+
+
+.AC:hover, .num:hover, .egal:hover {
+    opacity: 0.5;
+}
